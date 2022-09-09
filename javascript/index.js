@@ -343,13 +343,13 @@ const eliminar = () => {
         btn.addEventListener("click", (event) => {
             let nodo = event.path[2];
             // console.dir(event);            
-            let buscar = arrayUsuarios.findIndex(el => el.nombre == nodo.id)
-            arrayUsuarios.splice(buscar, 1)
-            nodo.remove()
+            let buscar = arrayUsuarios.findIndex(el => el.nombre == nodo.id);
+            arrayUsuarios.splice(buscar, 1);
+            nodo.remove();
             localStorage.setItem("arraydeUsuarios", JSON.stringify(arrayUsuarios))
         })
     }
-}
+};
 
 //función actualizar
 const actualizar = () => {
