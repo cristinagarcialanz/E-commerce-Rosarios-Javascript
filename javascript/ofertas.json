@@ -1,0 +1,11 @@
+
+[
+    {"id": 1, "nombre": "Vintage", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 400, "img": "../img/rosario11.jpeg"},
+    {"id": 2, "nombre": "Moderno", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 600, "img": "../img/arteyfe1.jpg"},
+    {"id": 3, "nombre": "Boda", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 500, "img": "../img/rosario33.png"},
+    {"id": 4, "nombre": "Bautizo", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 200, "img": "../img/rosario44.png"},
+    {"id": 5, "nombre": "Comunión", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 200, "img": "../img/rosario55.jpeg"},
+    {"id": 6, "nombre": "Souvenir", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 200, "img": "../img/rosario66.jpeg"},
+    {"id": 7, "nombre": "Recuerdos", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 200, "img": "../img/rosario77.jpeg"},
+    {"id": 8, "nombre": "Clásico", "cantidad": 1, "desc": "Precio Fin de Temporada $", "precio": 500, "img": "../img/rosario88.jpeg"}
+]

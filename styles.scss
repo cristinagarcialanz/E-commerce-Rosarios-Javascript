@@ -1,0 +1,386 @@
+//Paleta de Colores
+$color1: #F3EED9;
+$color2: #FFECF0;
+$color3: #D5CABD;
+$color4: #BEA6A1;
+$color5: #363636;
+$color6: black;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.containerLogo {
+    width: 125px;
+    height: 100px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    font-family: sacramento;
+    color: $color5;
+}
+
+#ecommerce {
+    border-style: none;
+    border-radius: 10%;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: sacramento;
+    color: $color4;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: $color1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: $color5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+
+    background-color: $color3;
+
+    :hover {
+        background-color: $color2;
+    }
+}
+
+//Jumbotron
+.jumbotron {
+    background-image: url(img/23.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 300px;
+    color: beige;
+    font-family: allur;
+
+    h2 {
+        color: $color5;
+        text-shadow: 0px 5px 4px 3px $color4;
+        font-weight: 500;
+        margin: -4px 0;
+        letter-spacing: 0.15px;        
+    }
+
+    p {
+        font-family: sacramento;
+        font-size: 30px;
+    }
+}
+
+#saludo {
+    color: white;
+    font-size: 30px;
+}
+
+.tituloJumbotron {
+    font-family: sacramento;
+    color: white;
+}
+
+span {
+    color: $color5;
+    font-size: 30px;
+}
+
+.parrafo {
+    padding: 20px;
+    color: $color5;
+}
+
+// Carrito de compras
+img {
+    width: 100%;
+}
+
+#boton-carrito {
+    border: none;
+    color: $color5;
+    font-size: 30px;
+    background-color: $color3;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+#boton-carrito:hover {
+    cursor: pointer;
+    color: $color3;
+    background-color: $color5;
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.precioProducto {
+    font-weight: 700;
+}
+
+.boton-agregar {
+    background-color: $color5;
+    color: $color3;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+}
+
+.boton-agregar:focus {
+    outline: none;
+}
+
+#cantidad {
+    color: $color5;
+    font-size: 20px;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: $color1;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: $color5;
+    padding-bottom: 5px;
+    margin-left: auto;
+    font-family: sacramento;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: $color5;
+    border: none;
+    background-color: $color1;
+}
+
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+
+.modal-carrito .precioProducto {
+    padding-top: 10px;    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid $color3;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+    border-left: 3px solid $color5;
+}
+
+.boton-eliminar {
+    background-color: $color1;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:focus {
+    outline: none;
+}
+
+// OFERTAS
+
+#listado {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#tarjetaOferta {
+    margin: auto;
+    color: $color5;
+    padding: 10px;
+}
+
+
+
+// Segunda Sección, Descripción
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.encabezado {
+    padding: 10px;
+    background-color: $color5;
+    color: $color3;
+    text-align: center;
+    font-family: sacramento;
+    font-size: 40px;
+}
+
+.panel {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+button.accordion {
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+    content: "\f150";
+    font-family: "fontawesome";
+    font-size: 18px;
+    float: right;
+}
+
+button.accordion.is-open:after {
+    content: "\f151";
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+    background-color: #ddd;
+}
+
+
+//Footer
+footer {
+    background-color: $color5;
+    color: $color1;
+    text-align: center;
+    padding: 10px;
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        color: $color1;
+        font-size: 22px;
+        padding: 5px;
+
+        a:hover {
+            color: $color3;
+        }
+    }
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $color1;
+    border: 3px solid $color5;
+    color: $color5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px $color1;
+}

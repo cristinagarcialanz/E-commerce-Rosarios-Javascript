@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fav SEO-->
+    <meta name="keywords"
+        content="ecommerce, tienda online, rosarios de bendición, souvenirs, regalos, detalles, recuerdos, cumpleaños, bautizo, boda, comunión, católico, iglesia, rosarios de bendición, decoración del hogar, delivery ">
+    <meta name="description"
+        content="Es una tienda online de ornamentos religiosos para decoración del hogar, souvenirs, regalos, detalles, recuerdos para cumpleaños, bautizo, boda, comunión y todas las celebraciones de la iglesia católica con estilo religioso tradicional, hacemos delivery a todo el país">
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="img/logo.png" />
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Arima+Madurai:wght@100&family=Arsenal&family=Dancing+Script&family=Domine:wght@500&family=Island+Moments&family=Libre+Bodoni:ital@1&family=Moon+Dance&family=Parisienne&family=Sacramento&family=Tangerine&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--link Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="styles.css">
+    <title>Bienvenidos | Casa Barceló Arte y Fe</title>
+</head>
+
+<body>
+    <main>
+    <header>
+        <div class="containerLogo img-fluid">
+            <img class="logo" src="img/logo.png" alt="Logo | Casa Barceló Arte y Fe">
+        </div>
+        <h1>Ecommerce</h1>
+        <h2 id="ecommerce"></h2>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <h2 class="display-4">Casa Barceló Arte y Fe</h2>
+        <div id="saludo"></div>
+        <p class="tituloJumbotron">Descubra el mundo de las bellas artes y eleve su hogar con <span> obras de arte de
+                artesanía excepcional.</span> </p>
+        <hr class="my-4">
+        <a id="alerta" class="btn btn-dark btn-lg" href="https://www.instagram.com/casabarceloarteyfe"
+            role="button">Learn more</a>
+    </div>
+    <!--Fin Jumbotron-->
+
+    <!--Primera Sección: Carrito de compras-->
+    <h3 class="encabezado">En Nuestra Tienda Online Encontrarás los más Hermosos Detalles para Regalar</h3>
+    <p class="parrafo">El Rezo del Santo Rosario es una de las herramientas más poderosas para tus oraciones diarias,
+        junto
+        con las Coronillas, que suelen expresar una devoción diferente, como la famosa Coronilla de la
+        Divina Misericordia. Es un sacramental bien conocido y ha sido utilizado durante siglos por cristianos
+        de todo el mundo. La Santísima Virgen María fue la primera en iniciar esta devoción y durante Sus
+        apariciones en muchos lugares diferentes animó a algunos santos católicos a usarla para obtener la
+        protección divina y la intercesión de los Santos. Entre estos hermosos rosarios encontrarás
+        algunos compuestos por cuentas de madera y cruces elaboradas a mono con arcilla. Explora nuestros Rosarios
+        de inigualable calidad, diseñados por los mejores artesanos y aprende a rezarlo. Con una variedad de
+        estilos y materiales disponibles, hay un rosario para cada necesidad y gusto.</p>
+
+    <div id="contenedor-productos">
+    </div>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito de Compras</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <div class="productoEnCarrito">
+                    <p>Producto</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <!--Segunda Sección, Acordion, descripción de Productos-->
+    <h3 class="encabezado">Tenemos Rosarios de Bendición para todas las Celebraciones</h3>
+    <div class="container">
+
+        <button id="acordion1" class="accordion">Rosarios de Bendición al Estilo Vintage</button>
+        <div class="panel">
+            <p>
+                ¡Consigue un 10% de descuento en tu primer pedido! Suscríbete a nuestro boletín y
+                Consigue un VALE de 10% de descuento en tu primera compra. Manténgase actualizado sobre los últimos
+                artículos,
+                ventas exclusivas e inspiradoras historias de fe.
+
+                * Válido para compras a partir de 60€.
+                Gastos de envío no incluidos.
+            </p>
+        </div>
+
+        <button id="acordion2" class="accordion">Rosarios de Bendición al Estilo Clásico</button>
+        <div class="panel">
+            <p>Explore nuestra selección clásica de rosarios. Elige tu Artículo Religioso favorito
+                entre nuestra colección. Compre en línea y sorprenda a sus seres queridos con un
+                regalo cristiano para toda la vida.
+            </p>
+        </div>
+
+        <button id="acordion3" class="accordion">Rosarios de Bendición para Bodas</button>
+        <div class="panel">
+            <p>
+                El look de una novia va mucho más allá que solo el vestido; es la correcta combinación de cada
+                complemento lo que lleva a una novia
+                lucir espectacular en su gran día. Y es que los tocados de novia son ideales para
+                complementar el outfit nupcial y marcar la diferencia.
+            </p>
+        </div>
+
+        <button id="acordion4" class="accordion">Rosarios de Bendición para Bautizos</button>
+        <div class="panel">
+            <p>
+                Para bendecir con rosarios la ceremonia de Buatizo de ese precioso regalo del cielo y darle la
+                bienvenida a la familia de Dios...
+                Todo lo que es bueno y perfecto es un regalo que desciende a nosotros de parte de Dios nuestro Padre...
+            </p>
+        </div>
+
+        <button id="acordion5" class="accordion">Rosarios de Bendición para Comunión</button>
+        <div class="panel">
+            <p>
+                Con alegría recibimos el sacramento de la Comunión, compartimos con toda la familia este momento tan
+                especial y la Felicidad en este maravilloso día... les ofrecemos recuerdos, souvenirs ó una caja de
+                rosario
+                que puede ser un regalo tan bonito y valioso para la Primera Comunión...
+            </p>
+        </div>
+
+    </div>
+    <!--Ofertas-->
+    <div id="ofertas">
+        <h2 class="encabezado">Sale, Sale, Sale!!!</h2>
+        </hr>
+        <ul id="listado"> </ul>
+    </div>
+
+    <!--Tercera Sección: Comunidad de Usuarios-->
+    <h3 class="encabezado">Súmate a Nuestra Comunidad de Usuarios </h3>
+    <p class="parrafo">¡Consigue un 10% de descuento en tu primer pedido! Suscríbete a nuestro boletín y
+        Consigue un VALE de 10% de descuento en tu primera compra. Manténgase actualizado sobre los últimos artículos,
+        ventas exclusivas e inspiradoras historias de fe.
+        * Válido para compras a partir de 60€.
+        Gastos de envío no incluidos.
+    </p>
+    <div class="container">
+        <form action="" id="form" class="row d-flex flex-column align-items-center  mt-4 mb-4">
+            <input class="mb-2 col-6" id="nombre" type="text" placeholder="Nombre">
+            <input class="mb-2 col-6" id="edad" type="text" placeholder="Edad">
+            <textarea class="mb-2 col-6" name="" placeholder="Descripcion particular" id="descripcion" cols="30"
+                rows="3"></textarea>
+            <input class="mb-2 col-6" type="text" id="imagen" placeholder="Foto">
+            <button type="submit" id="btn-create" class="btn btn-dark col-3">Success</button>
+        </form>
+
+        <div class="d-flex flex-column align-items-center">
+            <input class=" col-6" type="text" id="input_search" placeholder="Search">
+        </div>
+
+        <section id="tarjeta-usuario" class="row mt-4">
+        </section>
+    </div>
+</main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados por Copy Right© Grupo Casa Barceló 2022 | Developed by -
+            webapplicationstudio@gmail.com</p>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>    
+    </footer>
+    
+    <a href="#" class="subir"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="javascript/stock.js"></script>
+    <script defer src="javascript/modal.js"></script>
+    <script type="module" defer src="javascript/index.js"></script>
+</body>
+</html>
